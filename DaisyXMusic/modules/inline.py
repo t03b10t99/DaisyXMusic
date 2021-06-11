@@ -16,7 +16,7 @@ async def inline(client: Client, query: InlineQuery):
         await client.answer_inline_query(
             query.id,
             results=answers,
-            switch_pm_text="Type a YouTube video name...",
+            switch_pm_text="Ketikan Judul Lagu/Video Yang Dicari",
             switch_pm_parameter="help",
             cache_time=0,
         )
